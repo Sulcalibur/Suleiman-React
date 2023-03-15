@@ -2,14 +2,14 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import './copyright.css'
+import styles from './copyright.module.css'
 
 const Copyright = (props) => {
   return (
-    <div className={`copyright-copyright ${props.rootClassName} `}>
-      <div className="copyright-max-width">
-        <span className="copyright-text">
-          <span className="copyright-text01">
+    <div className={` ${styles['copyright']} ${styles[props.rootClassName]} `}>
+      <div className={styles['max-width']}>
+        <span className={styles['text']}>
+          <span className={styles['text01']}>
             <span>
               © All rights reserved
               <span
@@ -31,9 +31,9 @@ const Copyright = (props) => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <span className="copyright-text04">@TeleportHQ.</span>
+            <span className={styles['text04']}>@TeleportHQ.</span>
           </a>
-          <span className="copyright-text05">
+          <span className={styles['text05']}>
             <span>
               {' '}
               Powered by
@@ -56,9 +56,9 @@ const Copyright = (props) => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <span className="copyright-text08">Vercel</span>
+            <span className={styles['text08']}>Vercel</span>
           </a>
-          <span className="copyright-text09">
+          <span className={styles['text09']}>
             <span>
               . Image source:
               <span
@@ -80,9 +80,9 @@ const Copyright = (props) => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <span className="copyright-text12">Unsplash</span>
+            <span className={styles['text12']}>Unsplash</span>
           </a>
-          <span className="copyright-text13">.</span>
+          <span className={styles['text13']}>.</span>
         </span>
       </div>
     </div>

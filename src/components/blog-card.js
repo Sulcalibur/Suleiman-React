@@ -2,24 +2,27 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import './blog-card.css'
+import projectStyles from '../style.module.css'
+import styles from './blog-card.module.css'
 
 const BlogCard = (props) => {
   return (
-    <div className={`blog-card-blog-card ${props.rootClassName} `}>
+    <div className={` ${styles['blog-card']} ${styles[props.rootClassName]} `}>
       <img
         alt={props.image_alt}
         src={props.image_src}
-        className="blog-card-image"
+        className={styles['image']}
       />
-      <div className="blog-card-container">
-        <button className="blog-card-button button-secondary button">
+      <div className={styles['container']}>
+        <button
+          className={` ${styles['button']} ${projectStyles['button-secondary']} ${projectStyles['button']} `}
+        >
           {props.button}
         </button>
-        <span className="blog-card-text">{props.text1}</span>
+        <span className={styles['text']}>{props.text1}</span>
       </div>
-      <span className="blog-card-text1">
-        <span className="">
+      <span className={styles['text1']}>
+        <span>
           Excepteur sint occaecat cupidatat non proident, sunt
           <span
             dangerouslySetInnerHTML={{
@@ -27,9 +30,9 @@ const BlogCard = (props) => {
             }}
           />
         </span>
-        <span className="">in culpa qui and.</span>
+        <span>in culpa qui and.</span>
       </span>
-      <span className="blog-card-text4">{props.text}</span>
+      <span className={styles['text4']}>{props.text}</span>
     </div>
   )
 }

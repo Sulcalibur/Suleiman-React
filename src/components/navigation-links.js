@@ -2,22 +2,29 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import './navigation-links.css'
+import projectStyles from '../style.module.css'
+import styles from './navigation-links.module.css'
 
 const NavigationLinks = (props) => {
   return (
-    <nav className={`navigation-links-nav ${props.rootClassName} `}>
-      <a href="#aboutme" className="navigation-links-link Navigation-Link">
+    <nav className={` ${styles['nav']} ${styles[props.rootClassName]} `}>
+      <a
+        href="#aboutme"
+        className={` ${styles['link']} ${projectStyles['navigation-link']} `}
+      >
         {props.about1}
       </a>
-      <a href="#clients" className="navigation-links-link1 Navigation-Link">
+      <a
+        href="#clients"
+        className={` ${styles['link1']} ${projectStyles['navigation-link']} `}
+      >
         {props.clients}
       </a>
       <a
         href="https://drp.li/JgRWT"
         target="_blank"
         rel="noreferrer noopener"
-        className="navigation-links-link2 Navigation-Link"
+        className={` ${styles['link2']} ${projectStyles['navigation-link']} `}
       >
         {props.linkedin}
       </a>
@@ -25,7 +32,7 @@ const NavigationLinks = (props) => {
         href="https://drp.li/d5Ufp"
         target="_blank"
         rel="noreferrer noopener"
-        className="navigation-links-link3 Navigation-Link"
+        className={` ${styles['link3']} ${projectStyles['navigation-link']} `}
       >
         {props.resume}
       </a>

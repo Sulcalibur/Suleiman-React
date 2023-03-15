@@ -2,16 +2,18 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import './portofolio-card.css'
+import styles from './portofolio-card.module.css'
 
 const PortofolioCard = (props) => {
   return (
-    <div className={`portofolio-card-speaker-card ${props.rootClassName} `}>
-      <div className="portofolio-card-image-container">
+    <div
+      className={` ${styles['speaker-card']} ${styles[props.rootClassName]} `}
+    >
+      <div className={styles['image-container']}>
         <img
           alt={props.image_alt}
           src={props.image_src}
-          className="portofolio-card-image"
+          className={styles['image']}
         />
       </div>
     </div>

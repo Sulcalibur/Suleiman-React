@@ -2,16 +2,18 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import './feature-card1.css'
+import styles from './feature-card1.module.css'
 
 const FeatureCard1 = (props) => {
   return (
-    <div className={`feature-card1-feature-card ${props.rootClassName} `}>
-      <h2 className="feature-card1-text">{props.title}</h2>
+    <div
+      className={` ${styles['feature-card']} ${styles[props.rootClassName]} `}
+    >
+      <h2 className={styles['text']}>{props.title}</h2>
       <img
         alt={props.image_alt}
         src={props.image_src}
-        className="feature-card1-image"
+        className={styles['image']}
       />
     </div>
   )

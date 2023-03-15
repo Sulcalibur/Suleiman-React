@@ -1,51 +1,54 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'gatsby'
 
 import PropTypes from 'prop-types'
 
 import NavigationLinks from './navigation-links'
-import './navigation.css'
+import projectStyles from '../style.module.css'
+import styles from './navigation.module.css'
 
 const Navigation = (props) => {
   return (
-    <header data-role="Header" className="navigation-header">
-      <div id="nav" className="navigation-max-width">
-        <Link to="/" className="navigation-navlink">
+    <header data-role="Header" className={styles['header']}>
+      <div id="nav" className={styles['max-width']}>
+        <Link to="/" className={styles['navlink']}>
           <img
             alt={props.image_alt}
             src={props.image_src}
-            className="navigation-image"
+            className={styles['image']}
           />
         </Link>
-        <div className="navigation-nav">
-          <NavigationLinks rootClassName="navigation-links-root-class-name17"></NavigationLinks>
+        <div className={styles['nav']}>
+          <NavigationLinks rootClassName="root-class-name17"></NavigationLinks>
           <a
             href="mailto:work@sulei.uk?subject=From the site ~ [insert your profound subject here]"
-            className="navigation-register button-secondary button button-md"
+            className={` ${styles['register']} ${projectStyles['button-secondary']} ${projectStyles['button']} ${projectStyles['button-md']} `}
           >
             {props.button}
           </a>
         </div>
-        <div data-role="BurgerMenu" className="navigation-burger-menu">
-          <svg viewBox="0 0 1024 1024" className="navigation-icon">
+        <div data-role="BurgerMenu" className={styles['burger-menu']}>
+          <svg viewBox="0 0 1024 1024" className={styles['icon']}>
             <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
           </svg>
         </div>
-        <div data-role="MobileMenu" className="mobile-menu">
-          <div className="navigation-nav1">
-            <div className="navigation-container">
+        <div data-role="MobileMenu" className={projectStyles['mobile-menu']}>
+          <div className={styles['nav1']}>
+            <div className={styles['container']}>
               <img alt={props.image_alt1} src={props.image_src1} />
               <div
                 data-role="CloseMobileMenu"
-                className="navigation-close-mobile-menu"
+                className={styles['close-mobile-menu']}
               >
-                <svg viewBox="0 0 1024 1024" className="navigation-icon2">
+                <svg viewBox="0 0 1024 1024" className={styles['icon2']}>
                   <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
                 </svg>
               </div>
             </div>
-            <NavigationLinks rootClassName="navigation-links-root-class-name18"></NavigationLinks>
-            <button className="button-secondary button button-md">
+            <NavigationLinks rootClassName="root-class-name18"></NavigationLinks>
+            <button
+              className={` ${projectStyles['button-secondary']} ${projectStyles['button']} ${projectStyles['button-md']} `}
+            >
               {props.button2}
             </button>
           </div>

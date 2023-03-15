@@ -2,13 +2,14 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import './services-card.css'
+import projectStyles from '../style.module.css'
+import styles from './services-card.module.css'
 
 const ServicesCard = (props) => {
   return (
-    <div className="services-card">
-      <span className="services-card-text">{props.text}</span>
-      <span className="services-card-text1">{props.text1}</span>
+    <div className={projectStyles['services-card']}>
+      <span className={styles['text']}>{props.text}</span>
+      <span className={styles['text1']}>{props.text1}</span>
     </div>
   )
 }

@@ -2,20 +2,20 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import './event-card.css'
+import styles from './event-card.module.css'
 
 const EventCard = (props) => {
   return (
-    <div className="event-card-event-card">
+    <div className={styles['event-card']}>
       <img
         alt={props.image_alt}
         src={props.image_src}
-        className="event-card-image"
+        className={styles['image']}
       />
-      <div className="event-card-vertical-line"></div>
-      <div className="event-card-container">
-        <span className="event-card-title">{props.new_prop}</span>
-        <span className="event-card-text">{props.text}</span>
+      <div className={styles['vertical-line']}></div>
+      <div className={styles['container']}>
+        <span className={styles['title']}>{props.new_prop}</span>
+        <span className={styles['text']}>{props.text}</span>
       </div>
     </div>
   )
