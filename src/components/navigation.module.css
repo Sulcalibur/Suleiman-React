@@ -38,43 +38,9 @@
   text-decoration: none;
   background-color: var(--dl-color-scheme-blue);
 }
-.burger-menu {
-  display: none;
-}
-.icon {
-  fill: var(--dl-color-scheme-darkblue);
-  width: 24px;
-  height: 24px;
-  display: flex;
-}
-.nav1 {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: var(--dl-space-space-oneandhalfunits);
-  flex-direction: column;
-}
-.container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--dl-space-space-threeunits);
-  justify-content: space-between;
-}
-.close-mobile-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.icon2 {
-  width: 24px;
-  height: 24px;
-}
 @media(max-width: 991px) {
   .nav {
     display: none;
-  }
-  .burger-menu {
-    display: flex;
   }
 }
 @media(max-width: 767px) {
