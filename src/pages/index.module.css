@@ -44,6 +44,7 @@
 .primary {
   color: var(--dl-color-scheme-white);
   margin-bottom: var(--dl-space-space-threeunits);
+  text-decoration: none;
   background-color: var(--dl-color-scheme-blue);
 }
 .gallery {

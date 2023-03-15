@@ -59,11 +59,12 @@ const Home = (props) => {
                   }}
                 />
               </span>
-              <button
+              <a
+                href="mailto:work@sulei.uk?subject=From the site ~ [insert your profound subject here]"
                 className={` ${styles['primary']} ${projectStyles['button-primary']} ${projectStyles['button-lg']} ${projectStyles['button']} `}
               >
                 Get in touch
-              </button>
+              </a>
             </div>
             <div className={styles['gallery']}>
               <div className={styles['container01']}>
