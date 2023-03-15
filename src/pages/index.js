@@ -42,10 +42,18 @@ const Home = (props) => {
               <h1
                 className={` ${styles['text']} ${projectStyles['heading1']} `}
               >
-                Hi! I&apos;m Sul, I&apos;m a digital UX &amp; UI product
-                designer
+                <span>
+                  Hi!👋 I&apos;m Sul,
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+                <br></br>
+                <span>I&apos;m a digital UX &amp; UI product designer</span>
               </h1>
-              <span className={styles['text01']}>
+              <span className={styles['text04']}>
                 As a UX designer, I aim to create seamless and intuitive
                 experiences that exceed users&apos; expectations. With a deep
                 understanding of user behavior and psychology, I approach each
@@ -116,7 +124,7 @@ const Home = (props) => {
           >
             <div className={styles['heading-container1']}>
               <div className={styles['text-container']}>
-                <span className={styles['text02']}>My skillset</span>
+                <span className={styles['text05']}>My skillset</span>
                 <h2 className={projectStyles['heading2']}>
                   <span>
                     Using a range of
@@ -165,9 +173,9 @@ const Home = (props) => {
             className={` ${styles['max-width2']} ${projectStyles['max-content-container']} `}
           >
             <div className={styles['text-container1']}>
-              <span className={styles['text06']}> Previous Work</span>
+              <span className={styles['text09']}> Previous Work</span>
               <h2
-                className={` ${styles['text07']} ${projectStyles['heading2']} `}
+                className={` ${styles['text10']} ${projectStyles['heading2']} `}
               >
                 Some of the wonderful clients &amp; projects I have had the
                 pleasure to work on.
@@ -229,13 +237,13 @@ const Home = (props) => {
             className={` ${styles['max-width3']} ${projectStyles['max-content-container']} `}
           >
             <div id="aboutme" className={styles['text-container2']}>
-              <span className={styles['text08']}>about Me</span>
+              <span className={styles['text11']}>about Me</span>
               <h2
-                className={` ${styles['text09']} ${projectStyles['heading2']} `}
+                className={` ${styles['text12']} ${projectStyles['heading2']} `}
               >
                 I build with brands.
               </h2>
-              <span className={styles['text10']}>
+              <span className={styles['text13']}>
                 Employing established or emerging brands to enhance their
                 products to achieve peak performance and user satisfaction.
               </span>
@@ -245,7 +253,7 @@ const Home = (props) => {
                     <svg viewBox="0 0 1024 1024" className={styles['icon04']}>
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
-                    <span className={styles['text11']}>
+                    <span className={styles['text14']}>
                       Over a decade of experience
                     </span>
                   </div>
@@ -253,7 +261,7 @@ const Home = (props) => {
                     <svg viewBox="0 0 1024 1024" className={styles['icon06']}>
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
-                    <span className={styles['text12']}>
+                    <span className={styles['text15']}>
                       Development background in React JS
                     </span>
                   </div>
@@ -261,7 +269,7 @@ const Home = (props) => {
                     <svg viewBox="0 0 1024 1024" className={styles['icon08']}>
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
-                    <span className={styles['text13']}>
+                    <span className={styles['text16']}>
                       Design Systems advocate
                     </span>
                   </div>
@@ -269,7 +277,7 @@ const Home = (props) => {
                     <svg viewBox="0 0 1024 1024" className={styles['icon10']}>
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
-                    <span className={styles['text14']}>
+                    <span className={styles['text17']}>
                       Team player, mentor and leadership qualities
                     </span>
                   </div>
@@ -277,7 +285,7 @@ const Home = (props) => {
                     <svg viewBox="0 0 1024 1024" className={styles['icon12']}>
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
-                    <span className={styles['text15']}>
+                    <span className={styles['text18']}>
                       Always maintaining skills and design trends
                     </span>
                   </div>
@@ -285,7 +293,15 @@ const Home = (props) => {
                     <svg viewBox="0 0 1024 1024" className={styles['icon14']}>
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
-                    <span className={styles['text16']}>
+                    <span className={styles['text19']}>
+                      Experience running projects in an Agile environment
+                    </span>
+                  </div>
+                  <div className={styles['check-item6']}>
+                    <svg viewBox="0 0 1024 1024" className={styles['icon16']}>
+                      <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
+                    </svg>
+                    <span className={styles['text20']}>
                       I actually love my job - Bonus! 🙌🏼
                     </span>
                   </div>
@@ -322,41 +338,32 @@ const Home = (props) => {
           <div
             className={` ${styles['max-width4']} ${projectStyles['max-content-container']} `}
           >
-            <span className={styles['text17']}>My process</span>
+            <span className={styles['text21']}>My process</span>
             <h2
-              className={` ${styles['text18']} ${projectStyles['heading2']} `}
+              className={` ${styles['text22']} ${projectStyles['heading2']} `}
             >
-              <span>
-                Sticking to a simple five step process.
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
+              <span>Sticking to a simple five step process. </span>
               <br></br>
-              <span>Take a look.</span>
             </h2>
             <div className={styles['step']}>
-              <span className={styles['text22']}>01</span>
+              <span className={styles['text25']}>01</span>
               <div className={styles['container07']}>
-                <span className={styles['text23']}>
+                <span className={styles['text26']}>
                   Research &amp; Understanding
                 </span>
-                <span className={styles['text24']}>
-                  Understanding the task at hand and the problem to be
-                  solved. Conduct user research to gather insights about the
-                  target audience&apos;s needs, preferences, and behaviors. This
-                  step involves gathering data from various sources, such as
-                  user interviews, surveys, and analytics, to inform the design
-                  process. This is the foundation for the task.
+                <span className={styles['text27']}>
+                  Conduct user research to gather insights about the target
+                  audience&apos;s needs, preferences, and behaviors. This step
+                  involves gathering data from various sources, such as user
+                  interviews, surveys, and analytics, to inform the design
+                  process.
                 </span>
               </div>
             </div>
             <div className={styles['step1']}>
-              <span className={styles['text25']}>02</span>
+              <span className={styles['text28']}>02</span>
               <div className={styles['container08']}>
-                <span className={styles['text26']}>
+                <span className={styles['text29']}>
                   Ideation
                   <span
                     dangerouslySetInnerHTML={{
@@ -364,7 +371,7 @@ const Home = (props) => {
                     }}
                   />
                 </span>
-                <span className={styles['text27']}>
+                <span className={styles['text30']}>
                   Generate ideas and concepts for the design based on the
                   insights gathered from the research. This step involves
                   brainstorming, sketching, and creating user personas and
@@ -373,49 +380,46 @@ const Home = (props) => {
               </div>
             </div>
             <div className={styles['step2']}>
-              <span className={styles['text28']}>03</span>
+              <span className={styles['text31']}>03</span>
               <div className={styles['container09']}>
-                <span className={styles['text29']}>Design</span>
-                <span className={styles['text30']}>
-                  There are countless businesses already in existence, so it’s
-                  very likely that you won’t be the first person to think of an
-                  idea or product. There are countless businesses already in
-                  existence, so it’s very likely that you won’t be the first
-                  person to think of an idea or product.
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
+                <span className={styles['text32']}>Design</span>
+                <span className={styles['text33']}>
+                  Create low-fidelity (sketches) and high-fidelity prototypes to
+                  visualise and test the design. This step involves using design
+                  tools like Figma to create wireframes, mockups, and
+                  interactive prototypes that simulate the user&apos;s
+                  interaction with the product or service.
                 </span>
               </div>
             </div>
             <div className={styles['step3']}>
-              <span className={styles['text31']}>04</span>
+              <span className={styles['text34']}>04</span>
               <div className={styles['container10']}>
-                <span className={styles['text32']}>Testing</span>
-                <span className={styles['text33']}>
-                  There are countless businesses already in existence, so it’s
-                  very likely that you won’t be the first person to think of an
-                  idea or product. There are countless businesses already in
-                  existence, so it’s very likely that you won’t be the first
-                  person to think of an idea or product.
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
+                <span className={styles['text35']}>Testing</span>
+                <span className={styles['text36']}>
+                  Conduct usability testing to validate the design and ensure
+                  that it meets the user&apos;s needs and expectations. This
+                  step involves getting feedback from the target audience
+                  through user testing and analyzing the results to refine the
+                  design iteratively.
                 </span>
               </div>
             </div>
             <div className={styles['step4']}>
-              <span className={styles['text34']}>05</span>
+              <span className={styles['text37']}>05</span>
               <div className={styles['container11']}>
-                <span className={styles['text35']}>Implementation</span>
-                <span className={styles['text36']}>
-                  As a creative, using your professional judgement, you should
-                  begin filtering your various ideas and designs, retaining the
-                  strongest relevant material.
+                <span className={styles['text38']}>Implementation</span>
+                <span className={styles['text39']}>
+                  <span>
+                    Implement the final design and launch the product or
+                    service. This step involves working closely with developers
+                    and other stakeholders to ensure that the design is
+                    implemented accurately and effectively. It also involves
+                    monitoring the product or service&apos;s performance and
+                    making necessary adjustments based on user feedback and
+                    analytics.
+                  </span>
+                  <br></br>
                 </span>
               </div>
             </div>
@@ -427,13 +431,13 @@ const Home = (props) => {
           <div
             className={` ${styles['max-width5']} ${projectStyles['max-content-container']} `}
           >
-            <span className={styles['text37']}>what are you waiting?</span>
+            <span className={styles['text42']}>what are you waiting?</span>
             <h2
-              className={` ${styles['text38']} ${projectStyles['heading2']} `}
+              className={` ${styles['text43']} ${projectStyles['heading2']} `}
             >
-              Let’s collaborate!
+              Let’s collaborate! 👍🏼
             </h2>
-            <span className={styles['text39']}>
+            <span className={styles['text44']}>
               <span>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt
@@ -453,7 +457,7 @@ const Home = (props) => {
               href="mailto:work@sulei.uk?subject=From the site ~ [insert your profound subject here]"
               className={` ${styles['primary3']} ${projectStyles['button-lg']} ${projectStyles['button-secondary-white']} ${projectStyles['button']} `}
             >
-              Contact me 👍🏼
+              Contact me ✉️
             </a>
           </div>
         </div>
