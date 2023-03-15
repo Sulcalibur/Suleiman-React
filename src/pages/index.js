@@ -164,7 +164,7 @@ const Home = (props) => {
             className={` ${styles['max-width2']} ${projectStyles['max-content-container']} `}
           >
             <div className={styles['text-container1']}>
-              <span className={styles['text06']}>Some of My Previous</span>
+              <span className={styles['text06']}> Previous Work</span>
               <h2
                 className={` ${styles['text07']} ${projectStyles['heading2']} `}
               >
@@ -245,7 +245,7 @@ const Home = (props) => {
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
                     <span className={styles['text11']}>
-                      Quality services and support all time
+                      Over a decade of experience
                     </span>
                   </div>
                   <div className={styles['check-item1']}>
@@ -253,7 +253,7 @@ const Home = (props) => {
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
                     <span className={styles['text12']}>
-                      Long-term strategy development
+                      Development background in React JS
                     </span>
                   </div>
                   <div className={styles['check-item2']}>
@@ -261,7 +261,7 @@ const Home = (props) => {
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
                     <span className={styles['text13']}>
-                      FREE Brand Audit for startups
+                      Design Systems advocate
                     </span>
                   </div>
                   <div className={styles['check-item3']}>
@@ -269,7 +269,7 @@ const Home = (props) => {
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
                     <span className={styles['text14']}>
-                      Over 10 years in the business
+                      Team player, mentor and leadership qualities
                     </span>
                   </div>
                   <div className={styles['check-item4']}>
@@ -277,7 +277,7 @@ const Home = (props) => {
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
                     <span className={styles['text15']}>
-                      Future-Proofing Projects
+                      Always maintaining skills and design trends
                     </span>
                   </div>
                   <div className={styles['check-item5']}>
@@ -285,7 +285,7 @@ const Home = (props) => {
                       <path d="M384 690l452-452 60 60-512 512-238-238 60-60z"></path>
                     </svg>
                     <span className={styles['text16']}>
-                      Support in any implementation
+                      I actually love my job - Bonus! 🙌🏼
                     </span>
                   </div>
                   <div className={styles['container06']}>
